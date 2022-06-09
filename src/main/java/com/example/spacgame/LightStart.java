@@ -1,14 +1,11 @@
 package com.example.spacgame;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.RadialGradient;
@@ -17,11 +14,8 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
-
-public class Start extends Application {
-    public Start(Stage stage) {
+public class LightStart {
+    public LightStart(Stage stage) {
         try {
             start(stage);
         } catch (Exception e) {
@@ -29,7 +23,6 @@ public class Start extends Application {
         }
     }
 
-    @Override
     public void start(Stage stage) throws Exception {
         //   setting parameters for "START" window
         Group groupPlay = new Group();
@@ -64,7 +57,7 @@ public class Start extends Application {
         Button buttonPlay = new Button("  ▶ ");
         buttonPlay.setLayoutX(10);
         buttonPlay.setLayoutY(10);
-        buttonPlay.setStyle("-fx-background-color: #00ff00; -fx-text-fill: #000a28;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
+        buttonPlay.setStyle("-fx-background-color: #fff300; -fx-text-fill: #fbfcff;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
         buttonPlay.setOnAction(new EventHandler<ActionEvent>(){
             public void handle(ActionEvent event){
             }
@@ -75,7 +68,7 @@ public class Start extends Application {
         Button buttonRestart = new Button(" ⟳ ");
         buttonRestart.setLayoutX(10);
         buttonRestart.setLayoutY(110);
-        buttonRestart.setStyle("-fx-background-color: #00ff00; -fx-text-fill: #000a28;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
+        buttonRestart.setStyle("-fx-background-color: #fff300; -fx-text-fill: #eef0f5;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
         buttonRestart.setOnAction(new EventHandler<ActionEvent>(){
             public void handle(ActionEvent event){
             }
@@ -86,7 +79,7 @@ public class Start extends Application {
         Button buttonPause = new Button("⏸");
         buttonPause.setLayoutX(10);
         buttonPause.setLayoutY(60);
-        buttonPause.setStyle("-fx-background-color: #00ff00; -fx-text-fill: #000a28;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
+        buttonPause.setStyle("-fx-background-color: #fff300; -fx-text-fill: #fdfdff;-fx-font-size: 2em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
         buttonPause.setOnAction(new EventHandler<ActionEvent>(){
             public void handle(ActionEvent event){
             }
@@ -97,7 +90,7 @@ public class Start extends Application {
         Button buttonBack = new Button("BACK");
         buttonBack.setLayoutX(490);
         buttonBack.setLayoutY(330);
-        buttonBack.setStyle("-fx-background-color: #000a28; -fx-text-fill: #00ff00;-fx-font-size: 1.75em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
+        buttonBack.setStyle("-fx-background-color: #e093f8; -fx-text-fill: #fefffe;-fx-font-size: 1.75em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
         buttonBack.setOnAction(new EventHandler<ActionEvent>(){
             public void handle(ActionEvent event){
                 stage.close();

@@ -14,8 +14,8 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javafx.scene.text.Text;
 
-public class Rules extends Application {
-    public Rules(Stage stage){
+public class LightRules extends Application {
+    public LightRules(Stage stage) {
         try {
             start(stage);
         } catch (Exception e) {
@@ -23,7 +23,6 @@ public class Rules extends Application {
         }
     }
 
-    @Override
     public void start(Stage stage) throws Exception {
         //   setting parameters for "RULES" window
         Group rules = new Group();
@@ -40,8 +39,8 @@ public class Rules extends Application {
         scene.setFill(new RadialGradient(
                 2, 1, 0, 0, 1, true,
                 CycleMethod.NO_CYCLE,
-                new Stop(0, Color.web("086208FF")),
-                new Stop(1, Color.web("010546FF"))
+                new Stop(0, Color.web("#D8BFD8")),
+                new Stop(1, Color.web("#E0B0FF"))
         ));
 
         //adding description of rules
@@ -67,7 +66,7 @@ public class Rules extends Application {
         Button buttonBack = new Button("BACK");
         buttonBack.setLayoutX(490);
         buttonBack.setLayoutY(330);
-        buttonBack.setStyle("-fx-background-color: #00ff00; -fx-text-fill: #000a28;-fx-font-size: 1.75em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
+        buttonBack.setStyle("-fx-background-color: #e093f8; -fx-text-fill: #fdfdfd;-fx-font-size: 1.75em;-fx-font: normal bold 25px 'Pixeboy';-fx-background-radius: 15px;");
         buttonBack.setOnAction(new EventHandler<ActionEvent>(){
             public void handle(ActionEvent event){
                 stage.close();
@@ -82,6 +81,5 @@ public class Rules extends Application {
         buttonBack.setVisible(true);
         stage.show();
     }
-
 
 }
