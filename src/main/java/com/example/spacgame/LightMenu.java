@@ -14,7 +14,6 @@ import javafx.scene.paint.Stop;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import javafx.scene.text.Text;
 
 public class LightMenu extends Application{
     public LightMenu(Stage stage) {

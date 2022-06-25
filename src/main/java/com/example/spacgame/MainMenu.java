@@ -45,7 +45,7 @@ public class MainMenu extends Application {
         //adding background
         scene.setFill(new RadialGradient(
                 10, 0, 1, 1, 1.25, true,
-                CycleMethod.NO_CYCLE,
+                CycleMethod.NO_CYCLE, 
                 new Stop(0, Color.web("086208FF")),
                 new Stop(1, Color.web("010546FF"))
         ));
